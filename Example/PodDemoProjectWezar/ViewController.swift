@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import PodDemoProjectWezar
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let background = RickMortyView()
+        background.RickMortyBackground(view: self.view, styleOfBlure: .dark)
     }
 
     override func didReceiveMemoryWarning() {

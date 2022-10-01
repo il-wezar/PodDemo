@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PodDemoProjectWezar'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of PodDemoProjectWezar.'
+  s.summary          = 'Test COCOA Pods, you can change your background on Rick&Morty'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+  '## How to use: import: PodDemoProjWezar -> let background = RickMortyView() -> background.RickMortyBackground(view: UIView, styleOfBlure: "styleOfBlure")'
 TODO: Add long description of the pod here.
                        DESC
 
@@ -28,10 +29,11 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Illia/PodDemoProjectWezar.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
-  s.source_files = 'PodDemoProjectWezar/Classes/**/*'
+  s.source_files = 'PodDemoProjectWezar/Classes/**/*.swift'
   
+  s.swift_version = '4.0'
   # s.resource_bundles = {
   #   'PodDemoProjectWezar' => ['PodDemoProjectWezar/Assets/*.png']
   # }
